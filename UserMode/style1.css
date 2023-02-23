@@ -1,0 +1,159 @@
+body {
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    margin-bottom: 10px;
+  }
+  
+  form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .employee-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    fill: #007bff;
+  }
+  
+  .all-employees-icon {
+    background-image: url('https://image.flaticon.com/icons/svg/3299/3299324.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .add-employee-icon {
+    background-image: url('https://image.flaticon.com/icons/svg/2596/2596271.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .search-employees-icon {
+    background-image: url('https://image.flaticon.com/icons/svg/483/483356.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .search-results {
+    margin-top: 20px;
+  }
+  
+  .search-results h2 {
+    margin-top: 0;
+  }
+  
+  .search-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .search-results li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .search-results li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Style for Employee Table */
+#employee-list {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 16px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#employee-list th,
+#employee-list td {
+  text-align: left;
+  padding: 12px;
+}
+
+#employee-list th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#employee-list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#employee-list tr:hover {
+  background-color: #ddd;
+}
+
+#employee-list td:nth-child(1) {
+  font-weight: bold;
+}
+
+#employee-list td:last-child {
+  text-align: center;
+}
+
+.edit-btn,
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+.edit-icon,
+.delete-icon {
+  width: 20px;
+  height: 20px;
+  fill: #007bff;
+  vertical-align: middle;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  fill: #0056b3;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Database</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <h1>Employee Database</h1>
+
+    <!-- Add Employee Form -->
+    <h2>Add Employee</h2>
+    <form id="add-employee-form">
+      <label for="employee-number">Employee Number:</label>
+      <input type="text" id="employee-number" name="employee-number"><br>
+
+      <label for="adhar-card-number">Adhar Card Number:</label>
+      <input type="text" id="adhar-card-number" name="adhar-card-number"><br>
+
+      <label for="mobile-number">Mobile Number:</label>
+      <input type="text" id="mobile-number" name="mobile-number"><br>
+
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department"><br>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address"><br>
+
+      <button type="submit" id="add-employee">Add Employee</button>
+    </form>
+
+    <!-- Update Employee Form -->
+    <h2>Update Employee</h2>
+    <form id="update-employee-form">
+      <label for="update-employee-number">Employee Number:</label>
+      <input type="text" id="update-employee-number" name="update-employee-number"><br>
+
+      <label for="update-adhar-card-number">Adhar Card Number:</label>
+      <input type="text" id="update-adhar-card-number" name="update-adhar-card-number"><br>
+
+      <label for="update-mobile-number">Mobile Number:</label>
+      <input type="text" id="update-mobile-number" name="update-mobile-number"><br>
+
+      <label for="update-department">Department:</label>
+      <input type="text" id="update-department" name="update-department"><br>
+
+      <label for="update-address">Address:</label>
+      <input type="text" id="update-address" name="update-address"><br>
+
+      <button type="submit" id="update-employee">Update Employee</button>
+    </form>
+
+    <!-- Delete Employee Form -->
+    <h2>Delete Employee</h2>
+    <form id="delete-employee-form">
+      <label for="delete-employee-number">Employee Number:</label>
+      <input type="text" id="delete-employee-number" name="delete-employee-number"><br>
+
+      <button type="submit" id="delete-employee">Delete Employee</button>
+    </form>
+
+    <!-- Search Employee Form -->
+    <h2>Search Employee</h2>
+    <form id="get-employee-by-id-form">
+      <label for="search-employee-number">Search by Employee Number:</label>
+      <input type="text" id="search-employee-number" name="search-employee-number"><br>
+
+      <!-- <label for="search-department">Search by Department:</label>
+      <input type="text" id="search-department" name="search-department"><br> -->
+
+      <button type="submit" id="search-employee">Search Employee</button>
+    </form>
+    
+<!-- Show Employee Table -->
+<h2>Employee List</h2>
+<table id="employee-list">
+  <thead>
+    <tr>
+      <th>Employee Number</th>
+      <th>Adhar Card Number</th>
+      <th>Mobile Number</th>
+      <th>Department</th>
+      <th>Address</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- table rows will be dynamically added using JavaScript -->
+  </tbody>
+</table>
+
+<script src="./script.js"></script>
+<!-- <script src="./demo.js"></script> -->
+</body></body>
+</html>

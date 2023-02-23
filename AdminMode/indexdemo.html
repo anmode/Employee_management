@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Database</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Employee Database</h1>
+
+      <!-- Add Employee Form -->
+      <h2>Add Employee</h2>
+      <form id="add-employee-form" class="needs-validation" novalidate>
+        <div class="form-group">
+          <label for="employee-number">Employee Number:</label>
+          <input type="text" id="employee-number" name="employee-number" class="form-control" required>
+          <div class="invalid-feedback">Please provide a valid employee number.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="adhar-card-number">Adhar Card Number:</label>
+          <input type="text" id="adhar-card-number" name="adhar-card-number" class="form-control" required>
+          <div class="invalid-feedback">Please provide a valid Adhar Card number.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="mobile-number">Mobile Number:</label>
+          <input type="text" id="mobile-number" name="mobile-number" class="form-control" required>
+          <div class="invalid-feedback">Please provide a valid mobile number.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="department">Department:</label>
+          <input type="text" id="department" name="department" class="form-control" required>
+          <div class="invalid-feedback">Please provide a valid department.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" class="form-control" required>
+          <div class="invalid-feedback">Please provide a valid address.</div>
+        </div>
+
+        <button type="submit" id="add-employee" class="btn btn-primary">Add Employee</button>
+      </form>
+
+      <!-- Update Employee Form -->
+      <h2>Update Employee</h2>
+      <form id="update-employee-form" class="needs-validation" novalidate>
+        <div class="form-group">
+          <label for="update-employee-number">Employee Number:</label>
+          <input type="text" id="update-employee-number" name="update-employee-number" class="form-control" required>
+          <div class="invalid-feedback">Please provide a valid employee number.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="update-adhar-card-number">Adhar Card Number:</label>
+          <input type="text" id="update-adhar-card-number" name="update-adhar-card-number" class="form-control" required>
+          <div class="invalid-feedback">Please provide a valid Adhar Card number.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="update-mobile-number">Mobile Number:</label>
+          <input type="text" id="update-mobile-number" name="update-mobile-number" class="form-control" required>
+          <div class="invalid-feedback">Please provide a valid mobile number.</div>
+          </div>
+          
+          <div class="form-group">
+            <label for="update-department">Department:</label>
+            <input type="text" id="update-department" name="update-department" class="form-control" required>
+            <div class="invalid-feedback">Please provide a valid department.</div>
+          </div>
+      
+          <div class="form-group">
+            <label for="update-address">Address:</label>
+            <input type="text" id="update-address" name="update-address" class="form-control" required>
+            <div class="invalid-feedback">Please provide a valid address.</div>
+          </div>
+      
+          <button type="submit" id="update-employee" class="btn btn-primary">Update Employee</button>
+        </form>
+      
+        <!-- Delete Employee Form -->
+        <h2>Delete Employee</h2>
+        <form id="delete-employee-form" class="needs-validation" novalidate>
+          <div class="form-group">
+            <label for="delete-employee-number">Employee Number:</label>
+            <input type="text" id="delete-employee-number" name="delete-employee-number" class="form-control" required>
+            <div class="invalid-feedback">Please provide a valid employee number.</div>
+          </div>
+      
+          <button type="submit" id="delete-employee" class="btn btn-danger">Delete Employee</button>
+        </form>
+      
+        <!-- Employee Table -->
+        <h2>Employee List</h2>
+        <table id="employee-table" class="table">
+          <thead>
+            <tr>
+              <th>Employee Number</th>
+              <th>Adhar Card Number</th>
+              <th>Mobile Number</th>
+              <th>Department</th>
+              <th>Address</th>
+            </tr>
+          </thead>
+          <tbody id="employee-table-body">
+          </tbody>
+        </table>
+      </div>
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
+                

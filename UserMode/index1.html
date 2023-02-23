@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Database</title>
+    <link rel="stylesheet" type="text/css" href="./style1.css">
+  </head>
+  <body>
+    <h1>Employee Database</h1>
+    <!-- Search Employee Form -->
+    <h2>Search Employee</h2>
+    <form id="get-employee-by-id-form">
+      <label for="search-employee-number">Search by Employee Number:</label>
+      <input type="text" id="search-employee-number" name="search-employee-number"><br>
+
+      <!-- <label for="search-department">Search by Department:</label>
+      <input type="text" id="search-department" name="search-department"><br> -->
+
+      <button type="submit" id="search-employee">Search Employee</button>
+    </form>
+    
+<!-- Show Employee Table -->
+<h2>Employee List</h2>
+<table id="employee-list">
+  <thead>
+    <tr>
+      <th>Employee Number</th>
+      <th>Adhar Card Number</th>
+      <th>Mobile Number</th>
+      <th>Department</th>
+      <th>Address</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- table rows will be dynamically added using JavaScript -->
+  </tbody>
+</table>
+
+<script src="script1.js"></script>
+<!-- <script src="demo.js"></script> -->
+</body>
+</html>
